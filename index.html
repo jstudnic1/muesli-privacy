@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Muesli Notes privacy</title>
+<meta name="description" content="What Muesli Notes for iPhone does with your recordings, notes and API keys.">
+<style>
+  :root { --canvas: #fcfcf8; --ink: #262622; --ink-soft: #4e4d4b; --muted: #84847c; --olive: #5b6f00; --line: #e7e7e0; color-scheme: light dark; }
+  @media (prefers-color-scheme: dark) { :root { --canvas: #1e1e1e; --ink: #ecece6; --ink-soft: #cfcfca; --muted: #9b9b95; --olive: #c2d150; --line: #363635; } }
+  body { margin: 0; background: var(--canvas); color: var(--ink-soft); font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+  main { max-width: 40rem; margin: 0 auto; padding: 3rem 1rem 4rem; }
+  h1 { color: var(--ink); font: 600 2.2rem/1.15 "New York", ui-serif, Georgia, serif; margin: 0 0 1.5rem; }
+  h2 { color: var(--ink); font-size: 1.15rem; margin: 2.2rem 0 .5rem; padding-top: 1.2rem; border-top: 1px solid var(--line); }
+  a { color: var(--olive); }
+  ul { padding-left: 1.2rem; } li { margin: .4rem 0; }
+  strong { color: var(--ink); }
+</style>
+</head>
+<body>
+<main>
+<h1>Muesli Notes for iPhone: privacy</h1>
+<p>Muesli Notes (shown as "Muesli" on your iPhone) records meetings on your iPhone and writes notes, a transcript and tasks from them. It is made by VONO (vono digital s.r.o.). This is what happens with your data.</p>
+<p>Last updated: 24 October 2026.</p>
+<h2>What stays on your iPhone</h2>
+<p>Your recordings, notes, transcripts, tasks, folders and settings are stored only on your iPhone, inside the app. There is no Muesli account and no Muesli server. Notes, transcripts and tasks are part of your iPhone's own backup (iCloud or your computer, under your Apple account); recordings are not.</p>
+<h2>What leaves your iPhone</h2>
+<p>Only to process a meeting you recorded, and only with the API keys you enter yourself:</p>
+<ul><li><strong>ElevenLabs</strong> receives the meeting's audio, to turn it into a transcript with speakers, together with the names of the people in the meeting and your own list of names and words, so it spells them right. Its privacy policy: <a href="https://elevenlabs.io/privacy-policy">https://elevenlabs.io/privacy-policy</a></li><li><strong>Anthropic</strong> receives the meeting's title, the transcript, your own notes, the people in the meeting (their names, email addresses and whether they declined), your list of names and words, and the questions you ask in "Ask anything" with the parts of your notes and transcripts that answer them, to write notes, find tasks, name untitled notes and answer. Its privacy policy: <a href="https://www.anthropic.com/legal/privacy">https://www.anthropic.com/legal/privacy</a></li></ul>
+<p>Nothing else is sent anywhere. Muesli has no analytics, no tracking and no advertising.</p>
+<h2>Your API keys</h2>
+<p>Your ElevenLabs and Anthropic keys are kept in your iPhone's Keychain, on this device only. Muesli uses them only for the requests above and never shows them in full.</p>
+<h2>Calendar and microphone</h2>
+<p>Muesli asks for the microphone to record meetings, and for your calendar to show upcoming meetings and who was invited. It reads your calendar and never changes it. Of a meeting you record, only its title and the people invited are sent, as above; nothing else from your calendar leaves your iPhone.</p>
+<h2>Deleting your data</h2>
+<ul><li>Settings → Audio → "Delete all audio" deletes the recording of every processed meeting; notes, transcripts and tasks stay. Recordings that still have to be processed are kept until they are.</li><li>Deleting a note deletes its recording, transcript and tasks.</li><li>Deleting the app deletes your notes, transcripts, tasks and recordings. iOS keeps Keychain items after an app is deleted, so remove your keys first: Settings → API keys → "Remove key".</li></ul>
+<h2>Recording other people</h2>
+<p>Tell the people in the room that you are recording. Muesli reminds you before your first recording.</p>
+<h2>Contact</h2>
+<p>Questions about this policy or your data: <a href="mailto:jakub@vono.studio">jakub@vono.studio</a></p>
+</main>
+</body>
+</html>
